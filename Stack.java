@@ -35,6 +35,17 @@ public class Stack<T> {
     }
 
     /**
+     * Muestra el elemento en la cima de la pila sin eliminarlo.
+     * @return El elemento en la cima de la pila, o null si la pila está vacía.
+     */
+    public T peek() {
+        if (firstNode != null) {
+            return firstNode.getValue();
+        }
+        return null;
+    }
+
+    /**
      * Verifica si la pila está vacía.
      * @return true si la pila está vacía, false de lo contrario.
      */
