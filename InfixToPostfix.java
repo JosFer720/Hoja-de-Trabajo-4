@@ -1,7 +1,6 @@
 import java.util.Stack;
 
 public class InfixToPostfix {
-    
     public static String infixToPostfix(String infix) {
         StringBuilder postfix = new StringBuilder();
         Stack<Character> stack = new Stack<>();

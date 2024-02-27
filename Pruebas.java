@@ -1,44 +1,30 @@
-import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
-import java.util.Stack;
+import org.junit.Test;
 
 public class Pruebas {
 
     @Test
-    public void testPushPop() {
-        Stack<Integer> stack = new Stack<>();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        assertEquals(3, stack.pop().intValue());
-        assertEquals(2, stack.pop().intValue());
-        assertEquals(1, stack.pop().intValue());
-        assertTrue(stack.isEmpty());
+    public void testInfixToPostfix1() {
+        assertEquals("23+4*56+*", InfixToPostfix.infixToPostfix("(2+3)*4*(5+6)"));
     }
-
+    
     @Test
-    public void testSumar() {
-        ICalculadora calculadora = new Calculadora();
-        double resultado = calculadora.sumar(2, 3);
-        assertEquals(5, resultado, 0.0001);
+    public void testInfixToPostfix2() {
+        assertEquals("78+910*/1112*1314+-", InfixToPostfix.infixToPostfix("(7+8)/(9*10)-(11*12+13+14)"));
     }
-
+    
     @Test
-    public void testIsEmpty() {
-        Stack<Character> stack = new Stack<>();
-        assertTrue(stack.isEmpty());
-        stack.push('A');
-        assertFalse(stack.isEmpty());
-        stack.pop();
-        assertTrue(stack.isEmpty());
+    public void testInfixToPostfix3() {
+        assertEquals("151617*1819*20/+", InfixToPostfix.infixToPostfix("15*16*17+18*19/20"));
     }
+    
     @Test
-    public void testDivision() {
-        ICalculadora calculadora = new Calculadora();
-        double resultado = calculadora.dividir(2, 0);
-        assertEquals(5, resultado, 0.0001);
+    public void testInfixToPostfix4() {
+        assertEquals("21222324+*-", InfixToPostfix.infixToPostfix("21-(22*23+24)"));
+    }
+    
+    @Test
+    public void testInfixToPostfix5() {
+        assertEquals("2526*2728*29/3031*32-33+", InfixToPostfix.infixToPostfix("25*26/27*28-(29*30)+31-32"));
     }
 }
