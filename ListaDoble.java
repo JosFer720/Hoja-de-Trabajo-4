@@ -1,4 +1,7 @@
 /**
+ * Fernando Ruiz 23065
+ * Erick Guerra 23208
+ * ALGORITMOS Y ESTRUCTURAS DE DATOS 2016
  * Implementación de una lista doble que cumple con la interfaz de una lista.
  * @param <T> El tipo de elementos que contendrá la lista.
  */

@@ -1,4 +1,7 @@
 /**
+ * Fernando Ruiz 23065
+ * Erick Guerra 23208
+ * ALGORITMOS Y ESTRUCTURAS DE DATOS 2016
  * Clase que representa una pila genérica.
  * @param <T> El tipo de elementos que se almacenarán en la pila.
  */

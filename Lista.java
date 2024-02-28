@@ -1,4 +1,7 @@
 /**
+ * Fernando Ruiz 23065
+ * Erick Guerra 23208
+ * ALGORITMOS Y ESTRUCTURAS DE DATOS 2016
  * Implementación de una lista que cumple con la interfaz de una cola.
  * @param <T> El tipo de elementos que contendrá la lista.
  */

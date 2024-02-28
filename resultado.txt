@@ -1,0 +1,32 @@
+Entrada: (2+3)*4
+Postfix: 23+4*
+Resultado: NaN
+
+Entrada: 5*(6+7)
+Postfix: 567+*
+Resultado: NaN
+
+Entrada: 8+9*10
+Postfix: 8910*+
+Resultado: NaN
+
+Entrada: (11+12)/13
+Postfix: 1112+13/
+Resultado: NaN
+
+Entrada: 14*(15-16)
+Postfix: 141516-*
+Resultado: NaN
+
+Entrada: (17-18)/19
+Postfix: 1718-19/
+Resultado: NaN
+
+Entrada: 20+21+22
+Postfix: 2021+22+
+Resultado: NaN
+
+Entrada: (23+24)-25
+Postfix: 2324+25-
+Resultado: NaN
+

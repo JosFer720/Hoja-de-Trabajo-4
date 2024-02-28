@@ -1,4 +1,7 @@
 /**
+ * Fernando Ruiz 23065
+ * Erick Guerra 23208
+ * ALGORITMOS Y ESTRUCTURAS DE DATOS 2016
  * doubleerfaz que define operaciones básicas de una calculadora.
  */
 public interface ICalculadora {

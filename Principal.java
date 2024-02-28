@@ -1,10 +1,23 @@
+/**
+ * Fernando Ruiz 23065
+ * Erick Guerra 23208
+ * ALGORITMOS Y ESTRUCTURAS DE DATOS 2016
+ */
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Clase principal que contiene el método main para ejecutar el programa.
+ */
 public class Principal {
 
+    /**
+     * Método principal que se ejecuta al iniciar el programa.
+     * Lee un archivo de texto de entrada, procesa los datos y escribe los resultados en otro archivo de texto.
+     * @param args Argumentos de línea de comandos (no utilizados en este programa).
+     */
     public static void main(String[] args) {
         File inputFile = new File("ejemplo.txt");
         File outputFile = new File("resultado.txt");
@@ -39,6 +52,10 @@ public class Principal {
         }
     }
 
+    /**
+     * Lee un entero desde la entrada estándar.
+     * @return El entero leído.
+     */
     private static int leerEntero() {
         Scanner userInputScanner = new Scanner(System.in);
         int opcion = 0;

@@ -1,6 +1,21 @@
+/**
+ * Fernando Ruiz 23065
+ * Erick Guerra 23208
+ * ALGORITMOS Y ESTRUCTURAS DE DATOS 2016
+ */
+
 import java.util.Stack;
 
+/**
+ * Clase para convertir una expresión en notación infija a notación posfija (postfija).
+ */
 public class InfixToPostfix {
+    
+    /**
+     * Convierte una expresión en notación infija a notación posfija.
+     * @param infix Expresión en notación infija.
+     * @return Expresión en notación posfija.
+     */
     public static String infixToPostfix(String infix) {
         StringBuilder postfix = new StringBuilder();
         Stack<Character> stack = new Stack<>();
@@ -34,6 +49,11 @@ public class InfixToPostfix {
         return postfix.toString();
     }
     
+    /**
+     * Devuelve la precedencia de un operador.
+     * @param operator El operador.
+     * @return La precedencia del operador.
+     */
     private static int precedence(char operator) {
         switch (operator) {
             case '^':

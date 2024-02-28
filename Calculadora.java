@@ -1,4 +1,7 @@
 /**
+ * Fernando Ruiz 23065
+ * Erick Guerra 23208
+ * ALGORITMOS Y ESTRUCTURAS DE DATOS 2016
  * Clase que implementa la doubleerfaz {@link ICalculadora} proporcionando operaciones aritméticas básicas.
  */
 public class Calculadora implements ICalculadora {

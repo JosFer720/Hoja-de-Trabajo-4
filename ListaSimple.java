@@ -1,4 +1,7 @@
 /**
+ * Fernando Ruiz 23065
+ * Erick Guerra 23208
+ * ALGORITMOS Y ESTRUCTURAS DE DATOS 2016
  * Implementación de una lista simple que implementa la interfaz IList.
  * @param <T> Tipo de elementos almacenados en la lista.
  */
