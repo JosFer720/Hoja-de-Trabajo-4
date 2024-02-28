@@ -1,11 +1,13 @@
+
 public class FactoryArray<T> {
     
-    public ArrayStructure<T> createStructure(String tipo) {
+    public IQueue<T> createStructure(String tipo) {
         switch (tipo) {
             case "array":
-                return new Array1D<T>();
+                return new ArrayListQueue<T>();
             case "vector":
                 return new Vector<T>();
+            default:
                 throw new IllegalArgumentException("Tipo de estructura no válido");
         }
     }

@@ -5,6 +5,7 @@
 public class Node<T> {
     T value;
     Node<T> next;
+    Node<T> prev;
 
     /**
      * Obtiene el valor almacenado en el nodo.

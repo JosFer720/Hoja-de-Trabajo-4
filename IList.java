@@ -4,7 +4,7 @@ public interface IList<T>{
 
     public T getFirst();
 
-    public void addFirst();
+    public void addFirst(T value);
 
     public boolean isEmpty();
 }

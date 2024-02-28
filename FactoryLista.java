@@ -1,5 +1,5 @@
 public class FactoryLista<T> {
-    public static Lista<T> crearLista(String tipo) {
+    public IList<T> crearLista(String tipo) {
         switch (tipo) {
             case "simple":
                 return new ListaSimple<T>();
