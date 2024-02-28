@@ -3,8 +3,16 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Clase que maneja la lectura de un archivo de texto y procesa sus líneas.
+ */
 public class ManejadorArchivo {
 
+    /**
+     * Método principal que lee un archivo de texto y muestra sus líneas en la consola.
+     *
+     * @param args argumentos de la línea de comandos (no utilizado)
+     */
     public static void main(String[] args) {
         String archivo = "ejemplo.txt";
         try {
@@ -15,13 +23,19 @@ public class ManejadorArchivo {
                 for (String elemento : lineaElementos) {
                     System.out.print(elemento + " - ");
                 }
-                // System.out.println();
             }
         } catch (IOException e) {
             System.out.println("Error al abrir el archivo" + e.getMessage());
         }
     }
 
+    /**
+     * Abre un archivo de texto y procesa sus líneas en una lista de listas de cadenas.
+     *
+     * @param archivo el nombre del archivo a abrir
+     * @return una lista de listas de cadenas que representan los elementos de cada línea del archivo
+     * @throws IOException si ocurre un error al abrir o leer el archivo
+     */
     public static ArrayList<ArrayList<String>> abrirArchivo(String archivo) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(archivo));
         String linea;
